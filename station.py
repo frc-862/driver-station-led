@@ -49,6 +49,7 @@ if arduino is None:
 
 while True:  # Keep running so NetworkTables' event loop can run
     sleep(1)
+    print(arduino.readline())
 
 # Cleanup
 arduino.close()
